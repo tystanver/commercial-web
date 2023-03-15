@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+
+.di {
+    display: none;
+}
+
+
+.drop:hover .di {
+    display: block;
+}
+
+.hero {
+    background-image: url("/Image/Herosection\ images.webp");
+    height: 100%;
+}
+
+@layer components {
+    .size input:checked+label {
+        @apply bg-red-500 text-white;
+
+
+    }
+}
+
+.fot li>a :hover {
+    background-color: rgb(215, 193, 193);
+
+}
+
+.content {
+    color: rgba(218, 35, 72, 1);
+}
+
+/* 
+.card {
+    background-image: url("Image/img1.png");
+    width: 100%;
+    background-repeat: no-repeat;
+} */
+/* .inner {
+    bottom: -100px;
+    transform: rotate(15deg);
+}
+
+.in-con {
+    transform: rotate(-15deg);
+}
+
+.inner :hover>button {
+    display: block;
+
+} */
+.card :hover>span>i {
+    color: rgb(218, 19, 19);
+
+}
+
+.card :hover {
+    transition: 2s;
+}
